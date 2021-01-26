@@ -1,0 +1,39 @@
+{
+  "name": "@seguri/gimme-input",
+  "version": "1.0.0",
+  "description": "Get input from command line arguments or unix pipe",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix *.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seguri/gimme-input.git"
+  },
+  "keywords": [
+    "shell",
+    "bash",
+    "pipe",
+    "stdin",
+    "cli"
+  ],
+  "author": "Marco Seguri",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/seguri/gimme-input/issues"
+  },
+  "homepage": "https://github.com/seguri/gimme-input#readme",
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^4.3.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  }
+}
